@@ -22,6 +22,11 @@ class UserSeeder extends Seeder
             'name' => 'ammar kneish' ,
             'email' => 'ammar.kneish@gmail.com' ,
             'password' => Hash::make('ammar1998')
+        ],
+        [
+            'name' => 'Admin' ,
+            'email' => 'Admin@gmail.com' ,
+            'password' => Hash::make('adminadmin')
         ]]);
     }
 }
