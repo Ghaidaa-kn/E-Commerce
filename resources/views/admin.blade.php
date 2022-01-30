@@ -67,7 +67,7 @@
         <td>{{$product->description}}</td>
         <td>{{$product->points}}</td>
         <td>{{$product->replace_points}}</td>
-        <td><a class="btn btn-success" href="editProduct/{{$product->id}}">Edit</a></td>
+        <td><a class="btn btn-success" href="editProduct/{{$product->id}}">Edit</a></td> 
         <td><a class="btn btn-danger" href="/removeProduct/{{$product->id}}">Remove</a></td>
       </tr>
       @endforeach       

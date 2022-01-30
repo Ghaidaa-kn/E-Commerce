@@ -18,7 +18,7 @@ class UserController extends Controller
 
        if($user->email == "Admin@gmail.com" && Hash::check($req->password , $user->password)){
 
-        return redirect('/admin');
+        return redirect('/dash');
 
        }else{
 
@@ -42,13 +42,23 @@ class UserController extends Controller
         return redirect('/login');
     }
 
-    function adminIndex(){
+    // function adminIndex(){
+    //     $statistics =  User::withCount('orderscount')->get();
+    //     $products = Product::all();
+    //     //return $statistics;
+    //     return view('admin' , ['statistics'=>$statistics ,
+    //         'products'=>$products]);
+    // }
+
+    function adminStatistics(){
         $statistics =  User::withCount('orderscount')->get();
+        return view('statistics' , ['statistics'=>$statistics]);
+    } 
+
+    function adminProducts(){
         $products = Product::all();
-        //return $statistics;
-        return view('admin' , ['statistics'=>$statistics ,
-            'products'=>$products]);
-    }
+        return view('products_ad' , ['products'=>$products]);
+    }   
 
    
 }

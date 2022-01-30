@@ -167,7 +167,7 @@ class ProductController extends Controller
         $product->points = $req->points;
         $product->replace_points = $req->replace_points;
         $product->save();
-        return redirect('/admin');
+        return redirect('/dashp');
     }
 
     function removeProduct($id){
@@ -175,7 +175,7 @@ class ProductController extends Controller
         Product::destroy($id);
         //$this->removeCart($cart);
         
-        return redirect('/admin');
+        return redirect('/dashp');
     }
 
     function editProduct($id){
@@ -193,7 +193,7 @@ class ProductController extends Controller
         $product->points = $req->points;
         $product->replace_points = $req->replace_points;
         $product->save();
-        return redirect('/admin');
+        return redirect('/dashp');
     }
 
 

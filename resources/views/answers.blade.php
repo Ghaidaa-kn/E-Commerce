@@ -11,7 +11,6 @@
 <body>
 
 <div class="container"><br>
-  <a class="btn btn-danger" href="/"> <b>GO BACK</b> </a>
   <br>
   <h2><blod>Users FeedBacks<blod></h2>
   <br><br>

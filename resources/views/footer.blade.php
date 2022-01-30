@@ -1,12 +1,9 @@
 <div style="clear: both">
 	<div class="line">
 		<figure>
-		  <blockquote class="blockquote">
-		    <p><h4>A well-known quote, contained in a blockquote element.</h4></p>
-		  </blockquote>
-		   <h5><figcaption class="blockquote-footer">
-		    Someone famous in <cite title="Source Title">Source Title</cite>
-		  </figcaption></h5>
+		  <div class="copyright" style="margin-top: 20px; margin-bottom: 20px; margin-left: 10px;">
+               &copy; Copyright <strong><span>E-Commerce</span></strong>. All Rights Reserved
+        </div>
 	   </figure>
     </div>
 </div>

@@ -69,4 +69,12 @@ Route::post('/category/{category}' ,
 	'ProductController@getByCategory');
 
 
+Route::get('/dash', function () {
+    return view('dashboard');
+});
+
+Route::get('/dashu' , 'UserController@adminStatistics');
+Route::get('/dashp' , 'UserController@adminProducts');
+
+
 
